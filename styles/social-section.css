@@ -1,0 +1,41 @@
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea,
+p,
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  outline: none; }
+
+li {
+  list-style: none; }
+
+.link {
+  text-decoration: none; }
+  .link:hover {
+    cursor: pointer; }
+
+button {
+  border: none; }
+
+.sc-section__item {
+  -webkit-transform: rotate(90deg);
+          transform: rotate(90deg);
+  margin-top: 154px; }
+
+.sc-section__link {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 12.6px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #253757; }
+
+/*# sourceMappingURL=social-section.css.map */
