@@ -1,0 +1,116 @@
+@import "utils";
+
+.services {
+
+  &__intro-section {
+    text-align: left;
+    max-width: 742px;
+
+    .intro {
+      font-style: normal;
+      font-weight: 600;
+      font-size: 24px;
+      line-height: 150%;
+      color: $second-color;
+      width: 100%;
+      margin-top: 19px;
+    }
+  }
+
+  &__heading {
+    margin-top: 136px;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 100%;
+    text-align: center;
+    color: $second-color;
+  }
+
+  .service-cards-container {
+    margin-top: 160px;
+    display: flex;
+    padding-bottom: 162px;
+  }
+
+  .service {
+    width: 264px;
+    margin-right: 128px;
+    &:last-child {
+      margin-right: 0;
+    }
+
+    &__photo {
+      width: 160px;
+      height: 160px;
+      border-radius: 50%;
+    }
+
+    &__name {
+      margin-top: 64px;
+      font-style: normal;
+      font-weight: 900;
+      font-size: 19.6px;
+      line-height: 140%;
+      color: $second-color;
+    }
+
+    &__description {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 16px;
+      line-height: 150%;
+      color: $third-color;
+      margin-top: 32px;
+    }
+
+  }
+}
+
+.chapter-name {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $main-color;
+  position: relative;
+  margin-left: 21px + 16px;
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-image: url(../images/sub-title/sub-title-icon-dark.svg);
+    left: -16px - 21px;
+
+  }
+}
+
+@media (max-width: 1100px) {
+  .intro {
+    text-align: center;
+  }
+
+  .service-cards-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+
+    .service {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin: 60px 0 0;
+      border-bottom: 1px solid $second-color;
+      &:first-child {
+        margin: 0;
+      }
+    }
+  }
+}
