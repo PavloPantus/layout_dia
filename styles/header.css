@@ -121,11 +121,13 @@ button {
     .header__slider {
       width: 100%; }
       .header__slider .slider__toogler {
-        top: calc(100% - 64px); }
+        top: calc(100% - 10%);
+        width: 12%;
+        height: 10%; }
       .header__slider .slider__toogler_previous {
-        left: calc(50% - 81px); }
+        left: calc(50% - 12% - 3%); }
       .header__slider .slider__toogler_next {
-        left: 50%; }
+        left: 53%; }
     .header .sc-section {
       position: static;
       margin-top: 20px; }
