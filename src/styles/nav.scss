@@ -1,0 +1,41 @@
+@import "utils";
+
+.nav {
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  &__item {
+    margin-right: 63px;
+    margin-top: 3px;
+  }
+
+  &__item:first-child {
+    margin-right: 143px;
+    margin-top: 0;
+
+    & .link {
+      font-size: 32px;
+      line-height: 100%;
+    }
+  }
+
+  &__item:last-child {
+    margin-right: 0;
+    margin-left: 62px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 150%;
+    color: #fff;
+    white-space: nowrap;
+  }
+
+}

@@ -1,0 +1,18 @@
+@import "utils";
+
+.button {
+  width: 226px;
+  height: 56px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 150%;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #253757;
+  border-radius: 64px;
+  background: #fff;
+  &:hover {
+    cursor: pointer;
+  }
+}

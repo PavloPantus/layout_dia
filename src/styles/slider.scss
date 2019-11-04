@@ -1,0 +1,36 @@
+@import "utils";
+
+.slider {
+  width: $slider-width;
+  position: relative;
+
+  &__img {
+    width: 100%;
+  }
+
+  &__toogler {
+    width: $slider-toogler-width;
+    height: $slider-toogler-height;
+    background: #fcc304;
+    position: absolute;
+    top: calc(100% / 2);
+  }
+
+  &__toogler_previous {
+    border-radius: 50px 0 0 50px;
+    left: -$slider-toogler-width;
+    transform: translate(0 , calc(-$slider-toogler-height / 2));
+    background-image: url(../images/slider/toogler_previous.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__toogler_next {
+    border-radius: 0 50px 50px 0;
+    transform: translate(0 , calc(-$slider-toogler-height / 2));
+    background-image: url(../images/slider/toogler_next.png);
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+}
