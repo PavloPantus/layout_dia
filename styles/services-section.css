@@ -99,6 +99,8 @@ button {
     left: -37px; }
 
 @media (max-width: 1100px) {
+  .services {
+    padding: 10px; }
   .intro {
     text-align: center; }
   .service-cards-container {
