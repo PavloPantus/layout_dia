@@ -1,36 +1,10 @@
 @import "utils";
 
 .services {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
 
   &__intro-section {
     text-align: left;
     max-width: 742px;
-
-    .chapter-name {
-      font-style: normal;
-      font-weight: 800;
-      font-size: 16px;
-      line-height: 150%;
-      letter-spacing: 2px;
-      text-transform: uppercase;
-      color: $main-color;
-      position: relative;
-      margin-left: 21px + 16px;
-
-      &:before {
-        display: block;
-        content: "";
-        position: absolute;
-        width: 21px;
-        height: 21px;
-        background-image: url(../images/sub-title/sub-title-icon-dark.svg);
-        left: -16px - 21px;
-
-      }
-    }
 
     .intro {
       font-style: normal;
@@ -89,6 +63,29 @@
       color: $third-color;
       margin-top: 32px;
     }
+
+  }
+}
+
+.chapter-name {
+  font-style: normal;
+  font-weight: 800;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $main-color;
+  position: relative;
+  margin-left: 21px + 16px;
+
+  &:before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    background-image: url(../images/sub-title/sub-title-icon-dark.svg);
+    left: -16px - 21px;
 
   }
 }
