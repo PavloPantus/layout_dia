@@ -6,6 +6,7 @@
   background-position: 50% 0%;
   background-repeat: no-repeat;
   padding-top: 48px;
+  padding-bottom: 165px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -55,7 +56,7 @@
 
   .sc-section {
     position: absolute;
-    bottom: 112px;
+    bottom: 112px + 165px;
     right: calc(50% - #{144px + $slider-width / 2});
   }
 
