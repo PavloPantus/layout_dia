@@ -1,8 +1,8 @@
 @import "utils";
 
 .header {
-  background: url(../images/header/Bg.png);
-  background-size: 1595px 961px;
+  background-image: url(../images/header/Bg.png);
+  background-size: 1600px 961px; /*1595px 961px*/
   background-position: 50% 0%;
   background-repeat: no-repeat;
   padding-top: 48px;
@@ -11,6 +11,8 @@
   flex-direction: column;
   align-items: center;
   position: relative;
+  max-width: 1594px;
+  margin: 0 auto;
 
   &__nav {
     margin-left: 227px;
@@ -287,15 +289,12 @@
     background-size: cover;
 
     &__heading {
-      margin-left: 0;
       margin-right: 0;
-      align-self: center;
+
     }
 
     &__qoute {
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center;
+      margin-right: 200px;
     }
 
     &__button_learn-more {
@@ -327,21 +326,10 @@
 
 @media (min-width: 1600px) {
   .header {
-    background-position: 50% 0%;
-    background-size: contain;
-
-    &__heading {
-      align-self: center;
-    }
-
-    &__button_learn-more {
-      align-self: center;
-      margin-left: 0;
-    }
-
-    &__qoute {
-      text-align: center;
+    &__slider {
+      margin-top: 80px;
+      align-self: flex-start;
+      margin-left: 227px;
     }
   }
-
 }

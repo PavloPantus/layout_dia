@@ -2,6 +2,7 @@
 
 .section-process {
   padding: 160px 0 290px;
+  background-color: #fcfcfd;
 
   &__container {
     width: 1088px;
@@ -121,6 +122,14 @@
     }
   }
 
+}
+
+@media (min-width: 1600px) {
+  .section-process {
+    &__container {
+      margin-right: 59px;
+    }
+  }
 }
 
 @media screen and (max-width: 1200px) {

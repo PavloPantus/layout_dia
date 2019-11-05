@@ -1,6 +1,8 @@
 @import "utils";
 
 .services {
+  max-width: 1600px;
+  margin: 0 auto;
 
   &__intro-section {
     text-align: left;
@@ -87,6 +89,15 @@
     background-image: url(../images/sub-title/sub-title-icon-dark.svg);
     left: -16px - 21px;
 
+  }
+}
+
+@media (min-width: 1600px) {
+  .services {
+    .service-cards-container {
+      align-self: flex-start;
+      margin-left: 227px;
+    }
   }
 }
 
