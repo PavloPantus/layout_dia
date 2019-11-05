@@ -1,0 +1,172 @@
+/*colors*/
+/*colors*/
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  outline: none; }
+
+li {
+  list-style: none; }
+
+.link {
+  text-decoration: none; }
+  .link:hover {
+    cursor: pointer; }
+
+button {
+  border: none; }
+
+.footer {
+  background-color: #fcfcfd;
+  max-width: 1600px;
+  margin: 0 auto;
+  -webkit-box-flex: 0;
+      -ms-flex-positive: 0;
+          flex-grow: 0;
+  padding: 96px 0 0;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .footer .send-us-message-form {
+    margin-left: 227px; }
+    .footer .send-us-message-form__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
+    .footer .send-us-message-form .input {
+      margin-top: 48px;
+      width: 656px;
+      height: 41px;
+      background-color: #fcfcfd;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #e1e1e1; }
+      .footer .send-us-message-form .input:first-child {
+        margin-top: 104px; }
+      .footer .send-us-message-form .input::-webkit-input-placeholder {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14.4px;
+        line-height: 150%;
+        color: #152032; }
+      .footer .send-us-message-form .input::-moz-placeholder {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14.4px;
+        line-height: 150%;
+        color: #152032; }
+      .footer .send-us-message-form .input:-ms-input-placeholder {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14.4px;
+        line-height: 150%;
+        color: #152032; }
+      .footer .send-us-message-form .input::-ms-input-placeholder {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14.4px;
+        line-height: 150%;
+        color: #152032; }
+      .footer .send-us-message-form .input::placeholder {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14.4px;
+        line-height: 150%;
+        color: #152032; }
+    .footer .send-us-message-form__button-send {
+      margin-top: 105px;
+      background: #2f80ed;
+      color: white;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 1px; }
+  .footer .contact-us__container {
+    margin-left: 128px;
+    max-width: 362px; }
+  .footer .contact-us__heading {
+    margin-top: 19px; }
+  .footer .contact-us__invite {
+    margin-top: 43px;
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 150%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #334563; }
+  .footer .contact-us__invite-link {
+    font-style: normal;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #56ccf2; }
+  .footer .contact-us__sc-container {
+    margin-top: 51px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 192px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .footer .contact-us__sc-container .sc-link {
+      display: block;
+      width: 32px;
+      height: 32px;
+      background-image: url(../images/footer-icons/twitter.png); }
+      .footer .contact-us__sc-container .sc-link:nth-child(2) {
+        background-image: url(../images/footer-icons/insta.png); }
+      .footer .contact-us__sc-container .sc-link:nth-child(3) {
+        background-image: url(../images/footer-icons/facebook.png); }
+  .footer__nav {
+    margin: 136px auto 83px; }
+    .footer__nav .nav__item {
+      margin-top: 0; }
+      .footer__nav .nav__item:first-child {
+        margin-right: 384px; }
+      .footer__nav .nav__item:last-child {
+        margin-right: 0;
+        margin-left: 0; }
+    .footer__nav .nav__link {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      color: #253757; }
+
+/*# sourceMappingURL=footer.css.map */

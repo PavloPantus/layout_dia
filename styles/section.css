@@ -38,8 +38,6 @@ button {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column; }
-  .section:nth-child(odd) {
-    background: #e5e5e5; }
   .section__heading {
     font-style: normal;
     font-weight: 900;

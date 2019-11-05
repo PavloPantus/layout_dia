@@ -60,6 +60,23 @@ button {
   font-size: 16px;
   line-height: 150%;
   color: #fff;
-  white-space: nowrap; }
+  white-space: nowrap;
+  position: relative; }
+  .nav__link:before {
+    position: absolute;
+    content: "";
+    display: none;
+    width: calc(100% + 10px);
+    height: 4px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+    border-radius: 32px;
+    bottom: -5px;
+    -webkit-transform: translate(-5px, 0);
+            transform: translate(-5px, 0); }
+  .nav__link:hover:before {
+    display: block; }
+  .nav__link-hoover:before {
+    display: block; }
 
 /*# sourceMappingURL=nav.css.map */

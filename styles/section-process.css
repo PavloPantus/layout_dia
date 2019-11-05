@@ -28,7 +28,8 @@ button {
   border: none; }
 
 .section-process {
-  padding: 160px 0 290px; }
+  padding: 160px 0 290px;
+  background-color: #fcfcfd; }
   .section-process__container {
     width: 1088px;
     display: -webkit-box;
@@ -117,6 +118,10 @@ button {
       .section-process .steps-card_3 .steps-card__step:before {
         background: #03d542;
         opacity: 0.1; }
+
+@media (min-width: 1600px) {
+  .section-process__container {
+    margin-right: 59px; } }
 
 @media screen and (max-width: 1200px) {
   .section-process {

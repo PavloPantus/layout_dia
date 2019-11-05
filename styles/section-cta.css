@@ -1,0 +1,71 @@
+/*colors*/
+/*colors*/
+html,
+body,
+ul,
+li,
+button,
+input,
+textarea,
+p,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+  font-family: "Muli", sans-serif;
+  outline: none; }
+
+li {
+  list-style: none; }
+
+.link {
+  text-decoration: none; }
+  .link:hover {
+    cursor: pointer; }
+
+button {
+  border: none; }
+
+.section-cta {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 320px 0 160px;
+  background-image: url(../images/cta/fon.png);
+  background-color: #fcfcfd;
+  background-repeat: no-repeat;
+  background-position: bottom; }
+  .section-cta__container {
+    width: 754px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .section-cta__heading {
+    margin-top: 0; }
+  .section-cta__description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: #334563;
+    margin-top: 54px; }
+  .section-cta__button-apply {
+    margin-top: 55px;
+    background: #2f80ed;
+    color: white; }
+
+@media (max-width: 1150px) {
+  .section-cta {
+    padding: 20px 10px 10px; }
+    .section-cta .section-cta__container {
+      width: 100%; } }
+
+/*# sourceMappingURL=section-cta.css.map */

@@ -33,13 +33,15 @@ button {
   background-repeat: no-repeat;
   background-position: 0% 50%;
   padding: 198px 0 160px;
-  display: block; }
+  display: block;
+  max-width: 1600px;
+  margin: 0 auto; }
   .section-features__heading {
     margin-top: 20px; }
 
 .features-container {
   width: 362px;
-  margin-left: 14%; }
+  margin-left: 227px; }
   .features-container .chapter-name {
     color: #fff; }
     .features-container .chapter-name:before {
@@ -52,7 +54,7 @@ button {
     color: #fff;
     margin-top: 70px;
     position: relative;
-    margin-left: 64px; }
+    margin-left: 96px; }
     .features-container .feature:before {
       content: "";
       display: block;

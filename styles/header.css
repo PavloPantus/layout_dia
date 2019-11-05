@@ -28,8 +28,9 @@ button {
   border: none; }
 
 .header {
-  background: url(../images/header/Bg.png);
-  background-size: 1595px 961px;
+  background-image: url(../images/header/Bg.png);
+  background-size: 1600px 961px;
+  /*1595px 961px*/
   background-position: 50% 0%;
   background-repeat: no-repeat;
   padding-top: 48px;
@@ -44,7 +45,9 @@ button {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  position: relative; }
+  position: relative;
+  max-width: 1594px;
+  margin: 0 auto; }
   .header__nav {
     margin-left: 227px;
     margin-right: 424px; }
@@ -235,14 +238,9 @@ button {
     padding-left: 10px;
     background-size: cover; }
     .header__heading {
-      margin-left: 0;
-      margin-right: 0;
-      -ms-flex-item-align: center;
-          align-self: center; }
+      margin-right: 0; }
     .header__qoute {
-      margin-left: 0;
-      margin-right: 0;
-      text-align: center; }
+      margin-right: 200px; }
     .header__button_learn-more {
       -ms-flex-item-align: center;
           align-self: center;
@@ -263,17 +261,10 @@ button {
         margin-right: 80px; } }
 
 @media (min-width: 1600px) {
-  .header {
-    background-position: 50% 0%;
-    background-size: contain; }
-    .header__heading {
-      -ms-flex-item-align: center;
-          align-self: center; }
-    .header__button_learn-more {
-      -ms-flex-item-align: center;
-          align-self: center;
-      margin-left: 0; }
-    .header__qoute {
-      text-align: center; } }
+  .header__slider {
+    margin-top: 80px;
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-left: 227px; } }
 
 /*# sourceMappingURL=header.css.map */
