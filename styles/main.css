@@ -90,6 +90,7 @@ button {
   margin-left: 62px; }
 
 .nav__link {
+  text-decoration: none;
   font-style: normal;
   font-weight: bold;
   font-size: 16px;
