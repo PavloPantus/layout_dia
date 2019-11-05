@@ -1,7 +1,14 @@
 @import "utils";
 @import "fonts";
-@import "typography";
-
-body {
-  background: $c-gray;
-}
+@import "nav";
+@import "button";
+@import "slider";
+@import "social-section";
+@import "header";
+@import "section";
+@import "services-section";
+@import "section-process";
+@import "section-features";
+@import "section-testimonials";
+@import "section-cta";
+@import "footer";

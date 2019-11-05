@@ -1,0 +1,49 @@
+@import "utils";
+
+.section-cta {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: 320px 0 160px;
+  background-image: url(../images/cta/fon.png);
+  background-color: #fcfcfd;
+  background-repeat: no-repeat;
+
+  background-position: bottom;
+
+  &__container {
+    width: 754px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__heading {
+    margin-top: 0;
+  }
+
+  &__description {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+    text-align: center;
+    color: $third-color;
+    margin-top: 54px;
+  }
+
+  &__button-apply {
+    margin-top: 55px;
+    background: #2f80ed;
+    color: white;
+  }
+}
+
+@media (max-width: 1150px) {
+
+  .section-cta {
+    padding: 20px 10px 10px;
+    .section-cta__container {
+      width: 100%;
+    }
+  }
+}

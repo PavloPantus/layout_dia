@@ -1,0 +1,134 @@
+@import "utils";
+
+.footer {
+  background-color: #fcfcfd;
+  max-width: 1600px;
+  margin: 0 auto;
+  flex-grow: 0;
+  padding: 96px 0 0;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+
+  .send-us-message-form {
+    margin-left: 227px;
+    &__container {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .input {
+      margin-top: 48px;
+      &:first-child {
+        margin-top: 104px;
+      }
+      width: 656px;
+      height: 41px;
+      background-color: #fcfcfd;
+      outline: none;
+      border: none;
+      border-bottom: 1px solid #e1e1e1;
+      &::placeholder {
+        font-style: normal;
+        font-weight: bold;
+        font-size: 14.4px;
+        line-height: 150%;
+        color: #152032;
+      }
+    }
+
+    &__button-send {
+      margin-top: 105px;
+      background: #2f80ed;
+      color: white;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+  }
+
+  .contact-us {
+    &__container {
+      margin-left: 128px;
+      max-width: 362px;
+    }
+
+    &__heading {
+      margin-top: 19px;
+    }
+
+    &__invite {
+      margin-top: 43px;
+      font-style: normal;
+      font-weight: 800;
+      font-size: 12.6px;
+      line-height: 150%;
+      display: flex;
+      align-items: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #334563;
+    }
+
+    &__invite-link {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 150%;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      color: #56ccf2;
+    }
+
+    &__sc-container {
+      margin-top: 51px;
+      display: flex;
+      width: 192px;
+      justify-content: space-between;
+      .sc-link {
+        display: block;
+        width: 32px;
+        height: 32px;
+        background-image: url(../images/footer-icons/twitter.png);
+
+        &:nth-child(2) {
+          background-image: url(../images/footer-icons/insta.png);
+        }
+
+        &:nth-child(3) {
+          background-image: url(../images/footer-icons/facebook.png);
+        }
+      }
+    }
+
+  }
+
+  &__nav {
+    margin: 136px auto 83px;
+
+    .nav__item {
+      margin-top: 0;
+      &:first-child {
+        margin-right: 384px;
+      }
+      &:last-child {
+        margin-right: 0;
+        margin-left: 0;
+      }
+    }
+
+    .nav__link {
+      font-style: normal;
+      font-weight: bold;
+      font-size: 16px;
+      line-height: 150%;
+      color: #253757;
+    }
+
+  }
+
+}

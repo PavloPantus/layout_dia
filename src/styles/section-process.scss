@@ -1,0 +1,180 @@
+@import "utils";
+
+.section-process {
+  padding: 160px 0 290px;
+  background-color: #fcfcfd;
+
+  &__container {
+    width: 1088px;
+    display: flex;
+    justify-content: flex-start;
+    position: relative;
+  }
+
+  &__heading-container {
+    width: 362px;
+    flex-shrink: 0;
+  }
+
+  &__heading {
+    margin-top: 20px;
+  }
+
+  &__description {
+    margin-top: 64px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 150%;
+    color: $third-color;
+  }
+
+  .steps-card {
+    width: $step-card-width;
+    height: $step-card-height;
+    background: #fff;
+    box-shadow: 16px 16px 16px rgba(0, 0, 0, 0.02);
+    position: absolute;
+
+    &__step {
+      font-style: normal;
+      font-weight: 900;
+      font-size: 40px;
+      line-height: 150%;
+      text-align: center;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      margin-top: 64px;
+      position: relative;
+
+      &:before {
+        content: "";
+        display: block;
+        position: absolute;
+        width: 48px;
+        height: 48px;
+        border-radius: 50%;
+        background: rgba(163, 21, 21, 0.26);
+        bottom: 24px;
+        left: 94px;
+      }
+    }
+
+    &__step-descripion {
+      font-style: normal;
+      font-weight: normal;
+      font-size: 12.6px;
+      line-height: 150%;
+      text-align: center;
+      color: $second-color;
+    }
+  }
+
+  .steps-card_1 {
+    left: 548px;
+    top: 176px;
+
+    .steps-card__step {
+      color: #56ccf2;
+      &:before {
+        background: #56ccf2;
+        opacity: 0.1;
+      }
+    }
+  }
+
+  .steps-card_2 {
+    left: 846px;
+    top: 64px;
+
+    .steps-card__step {
+      color: #fcc304;
+      &:before {
+        background: #fcc304;
+        opacity: 0.1;
+      }
+    }
+  }
+
+  .steps-card_4 {
+    left: 846px;
+    top: 436px;
+
+    .steps-card__step {
+      color: #f25656;
+      &:before {
+        background: #f25656;
+        opacity: 0.1;
+      }
+    }
+  }
+
+  .steps-card_3 {
+    left: 548px;
+    top: 548px;
+
+    .steps-card__step {
+      color: #03d542;
+      &:before {
+        background: #03d542;
+        opacity: 0.1;
+      }
+    }
+  }
+
+}
+
+@media (min-width: 1600px) {
+  .section-process {
+    &__container {
+      margin-right: 59px;
+    }
+  }
+}
+
+@media screen and (max-width: 1200px) {
+  .section-process {
+    padding: 10px;
+
+    &__heading-container {
+      width: 100%;
+    }
+
+    .chapter-name {
+      text-align: center;
+    }
+
+    &__heading {
+      text-align: center;
+    }
+
+    &__description {
+      text-align: center;
+    }
+
+    &__container {
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+
+    .steps-container {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 50px;
+
+      .steps-card {
+        position: static;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section-process {
+    .steps-container {
+      grid-template-columns: 1fr;
+    }
+  }
+}

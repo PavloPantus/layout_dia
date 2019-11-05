@@ -1,0 +1,19 @@
+@import "utils";
+
+.sc-section {
+
+  &__item {
+    transform: rotate(90deg);
+    margin-top: 154px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 12.6px;
+    line-height: 150%;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #253757;
+  }
+}
