@@ -1066,6 +1066,7 @@ button {
 
 .client {
   margin-right: 78px;
+  background-color: white;
   width: 314px;
   height: 464px;
   -webkit-box-shadow: 16px 16px 32px rgba(0, 0, 0, 0.05);
@@ -1089,7 +1090,6 @@ button {
   .client:before {
     content: "";
     display: block;
-    z-index: -1;
     position: absolute;
     width: 161px;
     height: 64px;
@@ -1103,7 +1103,8 @@ button {
     top: 90px;
     left: 80px; }
   .client__photo {
-    margin-top: 95px; }
+    margin-top: 95px;
+    z-index: 1; }
   .client__response {
     font-style: italic;
     font-weight: normal;
