@@ -11,7 +11,7 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  max-width: 1594px;
+  max-width: 1600px;
   margin: 0 auto;
 
   &__nav {
@@ -330,6 +330,10 @@
       margin-top: 80px;
       align-self: flex-start;
       margin-left: 227px;
+    }
+
+    &__nav {
+      align-self: flex-start;
     }
   }
 }
