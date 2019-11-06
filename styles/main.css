@@ -104,8 +104,10 @@ button {
     display: none;
     width: calc(100% + 10px);
     height: 4px;
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+    /*stylelint-enable*/
     border-radius: 32px;
     bottom: -5px;
     -webkit-transform: translate(-5px, 0);
@@ -155,9 +157,13 @@ button {
   letter-spacing: 1px;
   color: #253757;
   border-radius: 64px;
-  background: #fff; }
+  background: #fff;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s; }
   .button:hover {
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1); }
 
 /*colors*/
 /*colors*/
@@ -306,7 +312,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  max-width: 1594px;
+  max-width: 1600px;
   margin: 0 auto; }
   .header__nav {
     margin-left: 227px;
@@ -525,7 +531,10 @@ button {
     margin-top: 80px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-left: 227px; } }
+    margin-left: 227px; }
+  .header__nav {
+    -ms-flex-item-align: start;
+        align-self: flex-start; } }
 
 /*colors*/
 /*colors*/
@@ -1084,8 +1093,10 @@ button {
     position: absolute;
     width: 161px;
     height: 64px;
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2;
+    /*stylelint-enable*/
     border-radius: 500px;
     -webkit-transform: rotate(-65deg);
             transform: rotate(-65deg);
@@ -1104,8 +1115,10 @@ button {
     margin-top: 31px;
     width: 64px;
     height: 2px;
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2;
+    /*stylelint-enable*/ }
   .client__name {
     font-style: normal;
     font-weight: bold;
@@ -1124,19 +1137,27 @@ button {
     text-transform: uppercase;
     color: #56ccf2; }
   .client:nth-child(2):before {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+    /*stylelint-enable*/ }
   .client:nth-child(2) .client__separator {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+    /*stylelint-enable*/ }
   .client:nth-child(2) .client__position {
     color: #fcc304; }
   .client:nth-child(3):before {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+    /*stylelint-enable*/ }
   .client:nth-child(3) .client__separator {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+    /*stylelint-enable*/ }
   .client:nth-child(3) .client__position {
     color: #f25656; }
 
@@ -1276,7 +1297,9 @@ button {
       -ms-flex-pack: start;
           justify-content: flex-start;
   -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+      flex-wrap: wrap;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
   .footer .send-us-message-form {
     margin-left: 227px; }
     .footer .send-us-message-form__container {
@@ -1367,7 +1390,11 @@ button {
     line-height: 150%;
     letter-spacing: 2px;
     text-transform: uppercase;
-    color: #56ccf2; }
+    color: #56ccf2;
+    -webkit-transition: all 0.5s;
+    transition: all 0.5s; }
+    .footer .contact-us__invite-link:hover {
+      color: #640e0e; }
   .footer .contact-us__sc-container {
     margin-top: 51px;
     display: -webkit-box;
@@ -1401,5 +1428,140 @@ button {
       font-size: 16px;
       line-height: 150%;
       color: #253757; }
+
+@media (max-width: 1500px) {
+  .footer {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .footer .send-us-message-form {
+      margin-left: 0; }
+    .footer__nav {
+      margin-left: 0;
+      margin-right: 0; } }
+
+@media (max-width: 1200px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+    .footer .send-us-message-form {
+      margin-left: 0; }
+      .footer .send-us-message-form__button-send {
+        margin-top: 50px;
+        -ms-flex-item-align: center;
+            align-self: center; }
+    .footer .contact-us__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: none;
+      width: 100%;
+      margin-top: 60px;
+      margin-left: 0; }
+    .footer__nav {
+      margin-left: 0;
+      margin-right: 0; }
+      .footer__nav .nav__list > * {
+        margin-right: 20px; } }
+
+@media (max-width: 1024px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%; }
+    .footer .send-us-message-form {
+      margin-left: 0; }
+      .footer .send-us-message-form__button-send {
+        margin-top: 50px;
+        -ms-flex-item-align: center;
+            align-self: center; }
+    .footer .contact-us__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: none;
+      width: 100%;
+      margin-top: 60px;
+      margin-left: 0; }
+    .footer__nav {
+      margin-left: 0;
+      margin-right: 0; }
+      .footer__nav .nav__list .nav__item {
+        margin-right: 20px; }
+        .footer__nav .nav__list .nav__item:first-child {
+          margin-right: 50px; } }
+
+@media (max-width: 768px) {
+  .footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0; }
+    .footer .send-us-message-form {
+      margin-left: 0;
+      width: 100%; }
+      .footer .send-us-message-form__button-send {
+        margin-top: 50px;
+        -ms-flex-item-align: center;
+            align-self: center; }
+      .footer .send-us-message-form .input {
+        width: 100%; }
+    .footer .contact-us__container {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      max-width: none;
+      width: 100%;
+      margin-top: 60px;
+      margin-left: 0; }
+      .footer .contact-us__container .contact-us__heading {
+        text-align: center; }
+      .footer .contact-us__container .contact-us__invite-link {
+        text-align: center; }
+    .footer__nav {
+      margin-left: 0;
+      margin-right: 0; }
+      .footer__nav .nav__list {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .footer__nav .nav__list .nav__item {
+          margin-right: 0;
+          margin-top: 20px; }
+          .footer__nav .nav__list .nav__item:first-child {
+            margin-right: 0; } }
 
 /*# sourceMappingURL=main.css.map */

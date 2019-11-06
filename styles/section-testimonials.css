@@ -80,8 +80,10 @@ button {
     position: absolute;
     width: 161px;
     height: 64px;
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
     background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2;
+    /*stylelint-enable*/
     border-radius: 500px;
     -webkit-transform: rotate(-65deg);
             transform: rotate(-65deg);
@@ -100,8 +102,10 @@ button {
     margin-top: 31px;
     width: 64px;
     height: 2px;
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #56ccf2;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #56ccf2;
+    /*stylelint-enable*/ }
   .client__name {
     font-style: normal;
     font-weight: bold;
@@ -120,19 +124,27 @@ button {
     text-transform: uppercase;
     color: #56ccf2; }
   .client:nth-child(2):before {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+    /*stylelint-enable*/ }
   .client:nth-child(2) .client__separator {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #fcc304;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #fcc304;
+    /*stylelint-enable*/ }
   .client:nth-child(2) .client__position {
     color: #fcc304; }
   .client:nth-child(3):before {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+    /*stylelint-enable*/ }
   .client:nth-child(3) .client__separator {
+    /*stylelint-disable*/
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0.25)), to(rgba(255, 255, 255, 0))), #f25656;
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656; }
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0) 100%), #f25656;
+    /*stylelint-enable*/ }
   .client:nth-child(3) .client__position {
     color: #f25656; }
 

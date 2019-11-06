@@ -46,7 +46,7 @@ button {
       -ms-flex-align: center;
           align-items: center;
   position: relative;
-  max-width: 1594px;
+  max-width: 1600px;
   margin: 0 auto; }
   .header__nav {
     margin-left: 227px;
@@ -265,6 +265,9 @@ button {
     margin-top: 80px;
     -ms-flex-item-align: start;
         align-self: flex-start;
-    margin-left: 227px; } }
+    margin-left: 227px; }
+  .header__nav {
+    -ms-flex-item-align: start;
+        align-self: flex-start; } }
 
 /*# sourceMappingURL=header.css.map */
