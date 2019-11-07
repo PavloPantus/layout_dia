@@ -42,7 +42,17 @@ button {
   .section-process__heading-container {
     width: 362px;
     -ms-flex-negative: 0;
-        flex-shrink: 0; }
+        flex-shrink: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
   .section-process__heading {
     margin-top: 20px; }
   .section-process__description {
@@ -121,7 +131,11 @@ button {
 
 @media (min-width: 1600px) {
   .section-process__container {
-    margin-right: 59px; } }
+    margin-right: 59px; }
+  .section-process__heading-container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; } }
 
 @media screen and (max-width: 1200px) {
   .section-process {

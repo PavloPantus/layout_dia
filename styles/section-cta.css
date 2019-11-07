@@ -28,7 +28,6 @@ button {
   border: none; }
 
 .section-cta {
-  max-width: 1600px;
   margin: 0 auto;
   padding: 320px 0 160px;
   background-image: url(../images/cta/fon.png);
@@ -64,7 +63,8 @@ button {
 
 @media (max-width: 1150px) {
   .section-cta {
-    padding: 20px 10px 10px; }
+    padding: 20px 10px 10px;
+    background-size: contain; }
     .section-cta .section-cta__container {
       width: 100%; } }
 

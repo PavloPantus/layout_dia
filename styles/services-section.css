@@ -107,9 +107,21 @@ button {
 @media (max-width: 1100px) {
   .services {
     padding: 10px; }
+    .services__intro-section {
+      text-align: center;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: column;
+              flex-direction: column; }
   .intro {
     text-align: center; }
-  .service-cards-container {
+  .services .service-cards-container {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -120,8 +132,9 @@ button {
     width: 100%;
     padding: 10px;
     -webkit-box-sizing: border-box;
-            box-sizing: border-box; }
-    .service-cards-container .service {
+            box-sizing: border-box;
+    margin-top: 50px; }
+    .services .service-cards-container .service {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -132,9 +145,9 @@ button {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center;
-      margin: 60px 0 0;
-      border-bottom: 1px solid #253757; }
-      .service-cards-container .service:first-child {
+      margin: 130px 0 0;
+      text-align: center; }
+      .services .service-cards-container .service:first-child {
         margin: 0; } }
 
 /*# sourceMappingURL=services-section.css.map */

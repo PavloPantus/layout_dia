@@ -27,6 +27,9 @@ li {
 button {
   border: none; }
 
+.footer-bg-container {
+  background-color: #fcfcfd; }
+
 .footer {
   background-color: #fcfcfd;
   max-width: 1600px;
@@ -270,6 +273,9 @@ button {
       width: 100%; }
       .footer .send-us-message-form__button-send {
         margin-top: 50px;
+        -ms-flex-item-align: center;
+            align-self: center; }
+      .footer .send-us-message-form__chapter-name {
         -ms-flex-item-align: center;
             align-self: center; }
       .footer .send-us-message-form .input {
