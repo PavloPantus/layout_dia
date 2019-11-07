@@ -1,9 +1,14 @@
 @import "utils";
 
+.header-container {
+  background: linear-gradient(115deg, #56ccf2 50%, #fff 50%, #fff 100%);
+  background-size: 100% 66%;
+  background-repeat: no-repeat;
+}
+
 .header {
-  background-image: url(../images/header/Bg.png);
-  background-size: 1600px 961px; /*1595px 961px*/
-  background-position: 50% 0%;
+  background: linear-gradient(115deg, #56ccf2 75%, #fff 75%, #fff 100%);
+  background-size: 1600px 600px;
   background-repeat: no-repeat;
   padding-top: 48px;
   padding-bottom: 165px;
@@ -15,8 +20,7 @@
   margin: 0 auto;
 
   &__nav {
-    margin-left: 227px;
-    margin-right: 424px;
+    padding: 0 5px;
   }
 
   &__heading {
@@ -25,8 +29,8 @@
     font-size: 64px;
     line-height: 150%;
     color: #fff;
-    margin-left: 325px;
-    margin-right: 521px;
+    margin-left: 320px;
+    padding: 0 5px;
     margin-top: 76px;
     flex-grow: 1;
     text-align: left;
@@ -36,7 +40,8 @@
 
   &__qoute {
     margin-top: 22px;
-    margin-left: 325px;
+    margin-left: 320px;
+    padding: 0 5px;
     margin-right: 521px;
     text-align: left;
     font-style: normal;
@@ -67,9 +72,7 @@
 /* Landscape phones and portrait tablets */
 @media (max-width: 767px) {
   .header {
-    padding-right: 10px;
-    padding-left: 10px;
-    background-size: cover;
+    background: none;
 
     &__nav {
       margin-left: 0;
@@ -120,13 +123,14 @@
       width: 100%;
 
       .slider__toogler {
-        top: calc(100% - 10%);
-        width: 12%;
-        height: 10%;
+        top: auto;
+        /*top: calc(100% - 10%);*/
+        bottom: 4px;
+        opacity: 0.7;
       }
 
       .slider__toogler_previous {
-        left: calc(50% - 12% - 3%);
+        left: calc(50% - 81px - 3%);
       }
 
       .slider__toogler_next {
@@ -159,9 +163,7 @@
 /* Portrait tablets and small desktops */
 @media (min-width: 768px) and (max-width: 991px) {
   .header {
-    padding-right: 10px;
-    padding-left: 10px;
-    background-size: cover;
+    background: none;
 
     &__nav {
       margin-left: 0;
@@ -222,9 +224,7 @@
 /* Landscape tablets and medium desktops */
 @media (min-width: 992px) and (max-width: 1199px) {
   .header {
-    padding-right: 10px;
-    padding-left: 10px;
-    background-size: cover;
+    background: none;
 
     &__nav {
       margin-left: 0;
@@ -283,10 +283,9 @@
 }
 
 @media (min-width: 1200px) and (max-width: 1530px) {
+
   .header {
-    padding-right: 10px;
-    padding-left: 10px;
-    background-size: cover;
+    background: none;
 
     &__heading {
       margin-right: 0;
@@ -334,6 +333,13 @@
 
     &__nav {
       align-self: flex-start;
+      margin-left: 222px;
     }
+  }
+}
+
+@media (max-width: 1530px) {
+  .header-container {
+    background: linear-gradient(180deg, #56ccf2 90%, #fff 90%, #fff 100%);
   }
 }

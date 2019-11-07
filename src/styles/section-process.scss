@@ -14,6 +14,9 @@
   &__heading-container {
     width: 362px;
     flex-shrink: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   &__heading {
@@ -128,6 +131,10 @@
   .section-process {
     &__container {
       margin-right: 59px;
+    }
+
+    &__heading-container {
+      align-items: flex-start;
     }
   }
 }

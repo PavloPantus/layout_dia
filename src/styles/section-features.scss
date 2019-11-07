@@ -1,15 +1,17 @@
 @import "utils";
 
 .section-features {
+  &__max-size-container {
+    max-width: 1600px;
+    margin: 0 auto;
+  }
+  background-color: #56ccf2;
+  display: block;
   background-image: url(../images/features/Bg.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: 0% 50%;
   padding: 198px 0 160px;
-  display: block;
-  max-width: 1600px;
-  margin: 0 auto;
-
   &__heading {
     margin-top: 20px;
 
@@ -121,15 +123,11 @@
       margin-left: 0;
 
       &:before {
-        content: "";
-        display: block;
-        width: $icon-width;
-        height: $icon-width;
+
         position: static;
-        border-radius: 50%;
-        background-color: #fff;
+
         transform: translate(0,-50%);
-        margin-left: calc(50% - #{$icon-width});
+        margin: 0 auto;
       }
     }
   }
