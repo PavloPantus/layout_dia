@@ -62,6 +62,50 @@ li {
 button {
   border: none; }
 
+.nav__toggler {
+  display: none; }
+  .nav__toggler:not(:checked) ~ .nav__list {
+    display: none; }
+  .nav__toggler:not(:checked) ~ * .bg-div:nth-child(1) {
+    left: 25px; }
+  .nav__toggler:not(:checked) ~ * .bg-div:nth-child(2) {
+    top: 8px;
+    left: 25px; }
+  .nav__toggler:not(:checked) ~ * .bg-div:nth-child(3) {
+    top: 16px;
+    left: 25px; }
+  .nav__toggler:checked ~ * .bg-div:first-child {
+    display: none; }
+  .nav__toggler:checked ~ * .bg-div:nth-child(2) {
+    -webkit-transform: rotate(45deg);
+            transform: rotate(45deg); }
+  .nav__toggler:checked ~ * .bg-div:nth-child(3) {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+
+.nav__toggle-label {
+  display: block;
+  width: 50px;
+  height: 50px;
+  position: relative;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  margin: 0 auto; }
+  .nav__toggle-label .bg-div {
+    background-color: #fff;
+    width: 40px;
+    margin-top: 20px;
+    position: absolute;
+    height: 5px;
+    -webkit-transition: all 0.4s;
+    transition: all 0.4s;
+    left: 5px;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0); }
+  @media (min-width: 768px) {
+    .nav__toggle-label {
+      display: none; } }
+
 .nav__list {
   display: -webkit-box;
   display: -ms-flexbox;
