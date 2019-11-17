@@ -69,7 +69,12 @@ button {
       background-color: #fcfcfd;
       outline: none;
       border: none;
-      border-bottom: 1px solid #e1e1e1; }
+      border-bottom: 1px solid #e1e1e1;
+      font-style: normal;
+      font-weight: bold;
+      font-size: 14.4px;
+      line-height: 150%;
+      color: #152032; }
       .footer .send-us-message-form .input:first-child {
         margin-top: 104px; }
       .footer .send-us-message-form .input::-webkit-input-placeholder {
