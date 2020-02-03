@@ -29,6 +29,7 @@
 
 .client {
   margin-right: 78px;
+  background-color: white;
 
   &:last-child {
     margin-right: 0;
@@ -46,7 +47,6 @@
   &:before {
     content: "";
     display: block;
-    z-index: -1;
     position: absolute;
     width: 161px;
     height: 64px;
@@ -61,6 +61,7 @@
 
   &__photo {
     margin-top: 95px;
+    z-index: 1;
   }
 
   &__response {

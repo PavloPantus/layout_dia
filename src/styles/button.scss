@@ -12,7 +12,9 @@
   color: #253757;
   border-radius: 64px;
   background: #fff;
+  transition: all 0.3s;
   &:hover {
     cursor: pointer;
+    transform: scale(1.1);
   }
 }

@@ -1,5 +1,9 @@
 @import "utils";
 
+.footer-bg-container {
+  background-color: #fcfcfd;
+}
+
 .footer {
   background-color: #fcfcfd;
   max-width: 1600px;
@@ -9,6 +13,7 @@
   flex-direction: row;
   justify-content: flex-start;
   flex-wrap: wrap;
+  box-sizing: border-box;
 
   .send-us-message-form {
     margin-left: 227px;
@@ -82,6 +87,10 @@
       letter-spacing: 2px;
       text-transform: uppercase;
       color: #56ccf2;
+      transition: all 0.5s;
+      &:hover {
+        color: rgb(100, 14, 14);
+      }
     }
 
     &__sc-container {
@@ -131,4 +140,152 @@
 
   }
 
+}
+
+@media (max-width: 1500px) {
+  .footer {
+    justify-content: center;
+
+    .send-us-message-form {
+      margin-left: 0;
+    }
+
+    &__nav {
+      margin-left: 0;
+      margin-right: 0;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+
+    .send-us-message-form {
+      margin-left: 0;
+      &__button-send {
+        margin-top: 50px;
+        align-self: center;
+      }
+    }
+
+    .contact-us__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: none;
+      width: 100%;
+      margin-top: 60px;
+      margin-left: 0;
+    }
+
+    &__nav {
+      margin-left: 0;
+      margin-right: 0;
+
+      .nav__list > * {
+        margin-right: 20px;
+      }
+    }
+  }
+}
+
+@media (max-width: 1024px) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+
+    .send-us-message-form {
+      margin-left: 0;
+      &__button-send {
+        margin-top: 50px;
+        align-self: center;
+      }
+    }
+
+    .contact-us__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: none;
+      width: 100%;
+      margin-top: 60px;
+      margin-left: 0;
+    }
+
+    &__nav {
+      margin-left: 0;
+      margin-right: 0;
+
+      .nav__list {
+        .nav__item {
+          margin-right: 20px;
+          &:first-child {
+            margin-right: 50px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .footer {
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+    margin: 0;
+
+    .send-us-message-form {
+      margin-left: 0;
+      width: 100%;
+      &__button-send {
+        margin-top: 50px;
+        align-self: center;
+      }
+
+      &__chapter-name {
+        align-self: center;
+      }
+
+      .input {
+        width: 100%;
+      }
+    }
+
+    .contact-us__container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      max-width: none;
+      width: 100%;
+      margin-top: 60px;
+      margin-left: 0;
+      .contact-us__heading {
+        text-align: center;
+      }
+
+      .contact-us__invite-link {
+        text-align: center;
+      }
+    }
+
+    &__nav {
+      margin-left: 0;
+      margin-right: 0;
+
+      .nav__list {
+        flex-direction: column;
+        align-items: center;
+        .nav__item {
+          margin-right: 0;
+          margin-top: 20px;
+          &:first-child {
+            margin-right: 0;
+          }
+        }
+      }
+    }
+  }
 }
